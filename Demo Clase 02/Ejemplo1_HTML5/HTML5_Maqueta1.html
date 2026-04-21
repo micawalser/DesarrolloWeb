@@ -1,0 +1,212 @@
+﻿<!DOCTYPE html>
+<html lang="es">
+<head>
+    <!-- El elemento meta charset define la codificación de caracteres del documento -->
+    <meta charset="UTF-8">
+    
+    <!-- El viewport ayuda a que la página sea responsive para dispositivos móviles -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Metadatos para SEO y compartir en redes sociales -->
+    <meta name="description" content="Ejemplo de maquetación HTML5 para clase introductoria">
+    <meta name="author" content="Profesor">
+    
+    <!-- Título de la página que aparece en la pestaña del navegador -->
+    <title>EJEMPLO MAQUETACIÓN EN HTML5</title>
+    
+    <!-- Enlace a hoja de estilos externa -->
+    <link rel="stylesheet" href="css/estilo.css">
+    
+    <!-- Fuentes web desde Google Fonts (ejemplo) -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    
+
+</head>
+
+<body>
+    <!-- Header: Cabecera del sitio, contiene elementos como logo, título principal -->
+    <header>
+        <!-- Logotipo con atributo alt para accesibilidad -->
+        <img src="media/ejemplo-logotipo.gif" width="189" height="57" alt="Logotipo del sitio" />
+        
+        <!-- Título principal de la página -->
+        <h1>EJEMPLO MAQUETACIÓN EN HTML5 - Maqueta #1</h1>
+    </header>
+
+    <!-- Nav: Barra de navegación principal del sitio -->
+    <nav aria-label="Navegación principal">
+        <!-- Lista de navegación - estructura semántica para menús -->
+        <ul>
+            <!-- Elementos de menú con enlaces -->
+            <li><a href="#inicio">Inicio</a></li>
+            <li><a href="#servicios">Servicios</a></li>
+            <li><a href="#productos">Productos</a></li>
+            <li><a href="#contacto">Contacto</a></li>
+        </ul>
+    </nav>
+
+    <!-- Section: Contenido principal de la página -->
+    <section>
+        <!-- Article: Representa una composición independiente (como un post de blog) -->
+        <article>
+            <!-- Header del artículo con su título -->
+            <header>
+                <h2>Título del Artículo Principal</h2>
+                <!-- Time: Elemento semántico para fechas -->
+                <time id="fecha-articulo"></time>
+            </header>
+            
+            <!-- Figure: Contenido independiente como imágenes con descripción -->
+            <figure>
+                <img src="media/koala.jpg" width="200" height="200" alt="Fotografía de un koala en su hábitat natural" />
+                <figcaption>Figura: Koala en su hábitat natural</figcaption>
+            </figure>
+            
+            <!-- Párrafos de texto con contenido -->
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean ornare sapien ac nibh vulputate feugiat. Morbi euismod velit sit amet libero volutpat ultrices in quis sem. Sed sit amet placerat sem. Curabitur vitae lectus nec purus accumsan faucibus.</p>
+            
+            <!-- Uso de elementos semánticos dentro del texto -->
+            <p>Donec <strong>ligula arcu</strong>, sagittis lacinia nibh et, consequat gravida turpis. Aenean nec <em>scelerisque felis</em>. Integer nec odio sed lorem mattis rhoncus quis quis nibh.</p>
+            
+            <!-- Details y Summary: Para crear contenido desplegable -->
+            <details>
+                <summary>Haz clic para ver más información</summary>
+                <p>Este es contenido adicional que se muestra cuando el usuario hace clic en el summary. Es útil para FAQ, detalles técnicos, etc.</p>
+            </details>
+        </article>
+        
+        <!-- Section anidada para un tema específico dentro de la sección principal -->
+        <section>
+            <h3>Subtema importante</h3>
+            
+            <!-- Lista ordenada con elementos -->
+            <ol>
+                <li>Primer paso importante</li>
+                <li>Segundo paso a seguir</li>
+                <li>Conclusión del proceso</li>
+            </ol>
+        </section>
+        
+        <!-- Formulario de ejemplo -->
+        <section id="contacto">
+            <h3>Formulario de contacto</h3>
+            <!-- Form: Estructura para envío de datos -->
+            <form action="/enviar" method="post">
+                <!-- Fieldset: Agrupa elementos relacionados del formulario -->
+                <fieldset>
+                    <legend>Datos personales</legend>
+                    
+                    <!-- Label: Etiqueta para campo de formulario - mejora accesibilidad -->
+                    <label for="nombre">Nombre:</label>
+                    <!-- Input: Campo de entrada con tipo text -->
+                    <input type="text" id="nombre" name="nombre" placeholder="Tu nombre" required>
+                    <br>
+                    
+                    <label for="email">Email:</label>
+                    <!-- Input: Campo tipo email con validación automática -->
+                    <input type="email" id="email" name="email" placeholder="tu@email.com" required>
+                    <br>
+                    
+                    <!-- Select: Menú desplegable con opciones -->
+                    <label for="tema">Tema:</label>
+                    <select id="tema" name="tema">
+                        <option value="consulta">Consulta</option>
+                        <option value="sugerencia">Sugerencia</option>
+                        <option value="problema">Problema técnico</option>
+                    </select>
+                </fieldset>
+                
+                <fieldset>
+                    <legend>Tu mensaje</legend>
+                    
+                    <!-- Textarea: Campo para texto multilínea -->
+                    <label for="mensaje">Mensaje:</label>
+                    <textarea id="mensaje" name="mensaje" rows="4" cols="50" placeholder="Escribe tu mensaje aquí..."></textarea>
+                    <br>
+                    
+                    <!-- Input tipo checkbox -->
+                    <input type="checkbox" id="terminos" name="terminos" required>
+                    <label for="terminos">Acepto los términos y condiciones</label>
+                </fieldset>
+                
+                <!-- Button: Botón para enviar el formulario -->
+                <button type="submit">Enviar mensaje</button>
+            </form>
+        </section>
+    </section>
+
+    <!-- Aside: Contenido relacionado pero no esencial -->
+    <aside>
+        <h3>Contenido Relacionado</h3>
+        
+        <!-- Nav dentro de aside: navegación secundaria -->
+        <nav aria-label="Categorías">
+            <h4>Categorías</h4>
+            <ul>
+                <li><a href="#cat1">Categoría 1</a></li>
+                <li><a href="#cat2">Categoría 2</a></li>
+            </ul>
+        </nav>
+        
+        <!-- Article en aside: contenido destacado -->
+        <article>
+            <h4>Artículo destacado</h4>
+            <p>Breve descripción de un artículo destacado que podría interesar al usuario.</p>
+            <a href="#articulo-destacado">Leer más</a>
+        </article>
+        
+        <!-- Elemento address: información de contacto -->
+        <address>
+            <p>Email: <a href="mailto:info@ejemplo.com">info@ejemplo.com</a></p>
+            <p>Teléfono: <a href="tel:+123456789">123-456-789</a></p>
+        </address>
+    </aside>
+
+    <!-- Footer: Pie de página con información adicional -->
+    <footer>
+        <!-- Enlaces importantes en el footer -->
+        <nav aria-label="Navegación del pie de página">
+            <a href="/privacidad">Política de privacidad</a> |
+            <a href="/terminos">Términos de uso</a> |
+            <a href="/cookies">Política de cookies</a>
+        </nav>
+        
+        <!-- Small: Texto legal o de derechos de autor -->
+        <small>&copy; <span id="anio-actual"></span> Ejemplo HTML5. Todos los derechos reservados.</small>
+        
+        <!-- Enlaces a redes sociales -->
+        <div class="social-links">
+            <!-- Se usan elementos SVG para iconos (aquí simplificados) -->
+            <a href="https://twitter.com/ejemplo" aria-label="Twitter">Twitter</a>
+            <a href="https://facebook.com/ejemplo" aria-label="Facebook">Facebook</a>
+            <a href="https://instagram.com/ejemplo" aria-label="Instagram">Instagram</a>
+        </div>
+    </footer>
+
+    <!-- Script colocado al final para mejor rendimiento -->
+    <script>
+        // Ejemplo de JavaScript básico
+        document.addEventListener('DOMContentLoaded', function() {
+            // Código que se ejecuta cuando la página está cargada
+            console.log('¡La página ha cargado completamente!');
+            
+            // Año actual en el footer
+            document.getElementById('anio-actual').textContent = new Date().getFullYear();
+            
+            // Fecha actual en el artículo
+            const hoy = new Date();
+            const fechaISO = hoy.toISOString().split('T')[0];
+            const fechaLegible = hoy.toLocaleDateString('es-ES', { day: 'numeric', month: 'long', year: 'numeric' });
+            const timeEl = document.getElementById('fecha-articulo');
+            timeEl.setAttribute('datetime', fechaISO);
+            timeEl.textContent = fechaLegible;
+            
+            // Ejemplo de manipulación del DOM
+            const titulo = document.querySelector('h1');
+            titulo.addEventListener('click', function() {
+                alert('¡Has hecho clic en el título!');
+            });
+        });
+    </script>
+</body>
+</html>
