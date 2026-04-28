@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TP: Selectores, atributos y layout</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+    <div id="contenedor-pagina">
+        <header class="cabecera" id="cabecera-principal">
+            <div class="cabecera__titulo">
+                <p class="titulo-ejercicio">Clase 4 ejercicio 2: selectores, atributos y layout </p>
+            </div>
+            <div class="cabecera__banner">
+                <img class="banner-imagen" src="imagen.jpg" alt="Banner del curso de Desarrollo Web">
+            </div>
+        </header>
+
+        <div class="cuerpo-principal">
+            <nav class="menu" aria-label="Enlaces externos">
+                <h2 class="menu__titulo">Menú</h2>
+                <ul class="menu__lista" id="menu-enlaces">
+                    <li><a href="https://developer.mozilla.org/es/" target="_blank" rel="noopener noreferrer">MDN Web Docs</a></li>
+                    <li><a href="https://www.w3.org/Style/CSS/" target="_blank" rel="noopener noreferrer">W3C — CSS</a></li>
+                    <li><a href="https://es.wikipedia.org/wiki/Dise%C3%B1o_web" target="_blank" rel="noopener noreferrer">Wikipedia: diseño web</a></li>
+                </ul>
+            </nav>
+
+            <main class="contenidos" id="contenido-principal">
+                <article>
+                    <h1 class="titulo-articulo">Las claves del 'game-based learning'</h1>
+
+                    <p class="introduccion">
+                        Los beneficios de los videojuegos han llegado también a la enseñanza con el
+                        <span class="termino-ingles">game-based learning</span> o
+                        <span class="resaltado-verde">aprendizaje basado en los juegos</span>
+                        <span class="resaltado-verde">electrónicos</span>.
+                        <span class="frase-enfatizada">Este método educativo utiliza lo bueno de los videojuegos para transmitir conocimientos a los estudiantes y se fundamenta en tres puntos clave:</span>
+                    </p>
+
+                    <ul class="lista-puntos" id="lista-vantajas">
+                        <li>
+                            <strong class="punto-titulo">Dinamiza la educación:</strong>
+                            <span class="cita-destacada"> transforman el aprendizaje en un juego divertido </span>
+                            <span class="texto-acento">Esto hace que los alumnos asimilen y retengan los contenidos casi sin darse cuenta.</span>
+                        </li>
+                        <li>
+                            <strong class="punto-titulo">Incrementa la motivación:</strong>
+                            <span class="resaltado-cian"> premian su esfuerzo con medallas </span>
+                            <span class="texto-acento">Así consiguen captar y mantener su interés por aprender.</span>
+                        </li>
+                        <li>
+                            <strong class="punto-titulo">Facilita la práctica:</strong>
+                            <span class="texto-acento"> Este es el cometido, por ejemplo, de los simuladores de aviación y navegación.</span>
+                        </li>
+                    </ul>
+
+                    <p class="cierre">
+                        <span class="cierre--tachado">Muchos padres recelan de las videoconsolas y no quieren verlas en casa por miedo a que perjudiquen el rendimiento escolar de sus hijos.</span>
+                        Sin embargo, los beneficios de los videojuegos incluyen el desarrollo de habilidades como la atención, la creatividad, la memoria, los idiomas y el trabajo en equipo.
+                    </p>
+                </article>
+            </main>
+        </div>
+
+        <footer class="pie" id="pie-pagina">
+            <p class="pie__alumno">Alumno: <span class="datos-alumno">Micaela Martinez</span></p>
+            <p class="pie__contacto">Contacto: <a class="enlace-mail" href="mailto:mmartinez@gmail.com">mmartinez@gmail.com</a></p>
+        </footer>
+    </div>
+</body>
+</html>
