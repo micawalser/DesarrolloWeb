@@ -1,0 +1,94 @@
+body {
+    margin: 0 auto;
+    font-family: system-ui, sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+/* --- Selectores de ID: estructura base (menú a la izquierda) --- */
+
+#contenedor {
+    max-width: 900px;
+    margin: 1rem auto;
+    border: 2px solid #333;
+    overflow: hidden;
+}
+
+#cabecera,
+#pie {
+    padding: 0.75rem 1rem;
+    background: #e0e0e0
+        repeating-linear-gradient(
+            -45deg,
+            #e0e0e0,
+            #e0e0e0 6px,
+            #d0d0d0 6px,
+            #d0d0d0 7px
+        );
+    border: 1px solid #999;
+}
+
+#menu,
+#contenido {
+    min-height: 12rem;
+    padding: 1rem;
+    border: 1px solid #999;
+    background: #f5f5f5
+        radial-gradient(circle, #999 0.5px, transparent 0.6px);
+    background-size: 6px 6px;
+}
+
+#menu {
+    float: left;
+    width: 28%;
+}
+
+#contenido {
+    float: left;
+    width: 70%;
+    margin-left: 2%;
+}
+
+#pie {
+    clear: both;
+    margin-top: 0;
+    border-top: 2px solid #333;
+}
+
+/* Modificación 1: menú a la derecha  */
+body.mod1 #contenido {
+    float: left;
+    width: 70%;
+    margin-left: 0;
+    margin-right: 2%;
+}
+
+body.mod1 #menu {
+    float: right;
+    width: 28%;
+    margin: 0;
+}
+
+/* Modificación 2: menú no visible  */
+body.mod2 #menu {
+    display: none;
+}
+
+body.mod2 #contenido {
+    float: none;
+    width: 100%;
+    margin-left: 0;
+    margin-right: 0;
+}
+
+/* Modificación 3: pie no visible  */
+body.mod3 #pie {
+    display: none;
+}
+
+/* Modificación 4: cabecera no visible */
+body.mod4 #cabecera {
+    display: none;
+}

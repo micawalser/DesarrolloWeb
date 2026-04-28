@@ -1,0 +1,33 @@
+body {
+	margin: 0 auto;
+}
+
+/* Selector de ID */
+#contenedor-principal {
+    border: 2px solid blue;
+    padding: 15px;
+    margin-bottom: 20px;
+}
+
+/* Selector de clase */
+.texto-importante {
+    font-weight: bold;
+    color: green;
+}
+
+/* Selector de atributo */
+li[data-tema="principal"] {
+    background-color: lightyellow;
+}
+
+/* Selector de pseudoclase */
+a:hover {
+    color: orange;
+    text-decoration: none;
+}
+
+button:disabled {
+    background-color: #ccc;
+    color: #666;
+    cursor: not-allowed;
+}
